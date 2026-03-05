@@ -4,29 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   
-  <!-- Redirect ngay lập tức bằng meta refresh (0 giây) -->
-  <meta http-equiv="refresh" content="0;url=https://s.shopee.vn/2Vmkr5l3DO" />
-  
-  <!-- Open Graph để FB lấy preview ảnh khi share link trang này -->
-  <meta property="og:title" content="Ảnh xinh + Deal Shopee hot" />
-  <meta property="og:description" content="Click để xem ảnh đẹp và deal Shopee siêu hấp dẫn nha!" />
+  <!-- Open Graph cho preview đẹp trên FB -->
+  <meta property="og:title" content="Ảnh xinh + Deal Shopee siêu hot!" />
+  <meta property="og:description" content="Click vào ảnh để xem chi tiết deal giảm sốc trên Shopee nhé! 💖" />
   <meta property="og:image" content="https://maunaildep.com/wp-content/uploads/2025/04/gai-xinh-k11-de-thuong.jpg" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="1200" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="điền-link-trang-của-bạn-vào-đây" />
+  <meta property="og:url" content="https://ten-ban.vercel.app" /> <!-- thay bằng link thật của bạn -->
   
-  <!-- Twitter card (tùy chọn, cho các nền tảng khác) -->
+  <!-- Twitter card (tùy chọn) -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://maunaildep.com/wp-content/uploads/2025/04/gai-xinh-k11-de-thuong.jpg" />
 
-  <title>Đang chuyển hướng...</title>
+  <title>Ảnh đẹp - Click để xem deal Shopee</title>
   
   <style>
-    body {
+    body, html {
       margin: 0;
       padding: 0;
-      height: 100vh;
+      height: 100%;
       background: #000;
       color: #fff;
       font-family: Arial, sans-serif;
@@ -37,34 +34,41 @@
     }
     .container {
       max-width: 90%;
+      padding: 20px;
     }
     img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.7);
+      width: 100%;
+      max-width: 500px;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.8);
+      cursor: pointer; /* con trỏ tay khi hover */
+      transition: transform 0.3s;
+    }
+    img:hover {
+      transform: scale(1.05);
     }
     p {
       margin-top: 20px;
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
-    a {
-      color: #ff5e00;
-      text-decoration: underline;
+    .note {
+      font-size: 1em;
+      color: #ccc;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <!-- Ảnh hiển thị trong lúc chờ redirect (nếu redirect chậm hoặc bị chặn) -->
   <div class="container">
-    <img src="https://maunaildep.com/wp-content/uploads/2025/04/gai-xinh-k11-de-thuong.jpg" alt="Ảnh xinh dễ thương" />
-    <p>Đang chuyển hướng đến Shopee... <br/>
-       Nếu không tự chuyển, <a href="https://s.shopee.vn/2Vmkr5l3DO">click vào đây</a> nhé!</p>
+    <!-- Ảnh clickable: click sẽ redirect sang Shopee -->
+    <img 
+      src="https://maunaildep.com/wp-content/uploads/2025/04/gai-xinh-k11-de-thuong.jpg" 
+      alt="Ảnh xinh dễ thương - Click để xem deal" 
+      onclick="window.location.href='https://s.shopee.vn/2Vmkr5l3DO';"
+    />
+    
+    <p>Click vào ảnh để xem deal Shopee siêu hấp dẫn! 🔥</p>
+    <div class="note">Hoặc copy link: <a href="https://s.shopee.vn/2Vmkr5l3DO" style="color: #ff5e00;">https://s.shopee.vn/2Vmkr5l3DO</a></div>
   </div>
-
-  <!-- Redirect bằng JavaScript (dự phòng, nhanh hơn meta refresh ở một số trình duyệt) -->
-  <script>
-    window.location.href = "https://s.shopee.vn/2Vmkr5l3DO";
-  </script>
 </body>
 </html>
